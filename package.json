@@ -1,0 +1,38 @@
+{
+  "name": "cdon_tools",
+  "version": "0.1.0",
+  "private": true,
+  "homepage": "https://afroborg.github.io/cdonTools/",
+  "dependencies": {
+    "bootstrap": "^4.3.1",
+    "material-icons-react": "^1.0.4",
+    "node-sass": "^4.12.0",
+    "react": "^16.8.6",
+    "react-autosize-textarea": "^7.0.0",
+    "react-dom": "^16.8.6",
+    "react-router-dom": "^5.0.1",
+    "react-scripts": "^3.0.1",
+    "xlsx": "^0.14.3",
+    "xsd-schema-validator": "^0.6.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ],
+  "devDependencies": {
+    "gh-pages": "^2.0.1"
+  }
+}
