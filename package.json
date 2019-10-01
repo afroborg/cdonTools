@@ -10,6 +10,7 @@
     "react": "^16.8.6",
     "react-autosize-textarea": "^7.0.0",
     "react-dom": "^16.8.6",
+    "react-monaco-editor": "^0.31.0",
     "react-router-dom": "^5.0.1",
     "react-scripts": "^3.0.1",
     "xlsx": "^0.14.3",

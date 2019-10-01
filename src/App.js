@@ -3,6 +3,8 @@ import { Route, Switch, Redirect } from 'react-router-dom';
 import Header from './components/header/Header';
 import ArtNrConverter from './components/articleNrConverter/ArtNrConverter';
 import Splits from './components/splits/Splits';
+import V2ProductGenerator from './components/v2productgenerator/V2ProductGenerator';
+import V4ProductGenerator from './components/v4productgenerator/V4ProductGenerator';
 
 class App extends Component {
   constructor(props) {
@@ -32,6 +34,14 @@ class App extends Component {
             component={() => (
               <Splits ids={this.state.ids} setIds={this.setIds} />
             )}
+          />
+          <Route
+            path="/v2-product-generator"
+            component={() => <V2ProductGenerator />}
+          />
+          <Route
+            path="/v4-product-generator"
+            component={() => <V4ProductGenerator />}
           />
           <Redirect to="/generator" />
         </Switch>
