@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "d2661d218c558c0d20f04ca8c676d542",
+    "revision": "bec3f5262787f44e06bddbf797bf5375",
     "url": "/cdonTools/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/cdonTools/static/css/2.545c6387.chunk.css"
   },
   {
-    "revision": "2bcae0915f92e8bdb617",
+    "revision": "1c7b8b57cb61cacb9349",
     "url": "/cdonTools/static/css/main.40e97c73.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/cdonTools/static/js/2.da22a3a2.chunk.js"
   },
   {
-    "revision": "2bcae0915f92e8bdb617",
-    "url": "/cdonTools/static/js/main.a229868a.chunk.js"
+    "revision": "1c7b8b57cb61cacb9349",
+    "url": "/cdonTools/static/js/main.534a9ca8.chunk.js"
   },
   {
     "revision": "4418abe06a504c05d6f4",
