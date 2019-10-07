@@ -17,7 +17,6 @@ export default class V4ProductGenerator extends Component {
     mediaXML: ''
   };
   generateXML = () => {
-    console.log(this.state.prefix);
     const prefix = this.state.prefix !== '' ? this.state.prefix : undefined;
     this.setState({
       productXML: generateProduct(this.state.products, prefix),
