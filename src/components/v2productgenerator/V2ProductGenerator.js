@@ -10,7 +10,12 @@ export default class V2ProductGenerator extends Component {
     xml: ''
   };
   generateXML = () => {
-    this.setState({ xml: generateXML(this.state.products, this.state.prefix) });
+    this.setState({
+      xml: generateXML(
+        this.state.products,
+        this.state.prefix !== '' ? this.state.prefix : undefined
+      )
+    });
   };
 
   generateFile = () => {
