@@ -35,7 +35,7 @@ const generateXML = (products = 1, prefix = 'Product', variations) => {
     xml += '</product>';
   }
   xml += `</products></documents></cdon_shopping_mall_import>`;
-  return xmlFormatter(xml, {collapseContent: true});
+  return xmlFormatter(xml, { collapseContent: true });
 };
 
 const generateProductStatuses = () => {
@@ -59,12 +59,6 @@ const random = max => {
 
 const generateKeys = () => {
   return '<key attribute="CatalogColor"><variation value="Cool color" /></key><key attribute="CatalogSize"><variation value="Too big" /></key>';
-};
-
-const addVariations = (products, use) => {
-  if (use) {
-    return;
-  }
 };
 
 export default generateXML;
