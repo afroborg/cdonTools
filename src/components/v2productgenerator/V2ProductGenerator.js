@@ -7,13 +7,15 @@ export default class V2ProductGenerator extends Component {
   state = {
     products: 1,
     prefix: undefined,
-    xml: ''
+    xml: '',
+    useVariations: false
   };
   generateXML = () => {
     this.setState({
       xml: generateXML(
         this.state.products,
-        this.state.prefix !== '' ? this.state.prefix : undefined
+        this.state.prefix !== '' ? this.state.prefix : undefined,
+        this.state.useVariations
       )
     });
   };
@@ -64,6 +66,25 @@ export default class V2ProductGenerator extends Component {
                 name="prefix"
                 onChange={this.handleChange}
               />
+            </div>
+            <div className="form-group">
+              <div className="custom-control custom-switch">
+                <input
+                  type="checkbox"
+                  className="custom-control-input"
+                  id="include-variations"
+                  checked={this.state.useVariations}
+                  onChange={() =>
+                    this.setState({ useVariations: !this.state.useVariations })
+                  }
+                />
+                <label
+                  className="custom-control-label"
+                  for="include-variations"
+                >
+                  Include variations
+                </label>
+              </div>
             </div>
             <div className="form-group">
               <button
