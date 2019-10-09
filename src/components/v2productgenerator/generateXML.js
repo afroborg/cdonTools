@@ -35,7 +35,7 @@ const generateXML = (products = 1, prefix = 'Product', variations) => {
     xml += '</product>';
   }
   xml += `</products></documents></cdon_shopping_mall_import>`;
-  return xmlFormatter(xml);
+  return xmlFormatter(xml, {collapseContent: true});
 };
 
 const generateProductStatuses = () => {
